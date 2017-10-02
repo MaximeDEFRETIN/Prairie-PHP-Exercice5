@@ -1,9 +1,8 @@
 <?php
-
-$1P = "Une phrase";
-$2P = "UNe second phrase";
-
-function Phrases ($1P, $2P) { $C = $1P . ' ' . $2P;
-	                           return $C; }
-echo Phrases;
+$I = 1;
+for ($I; $I <= 100; $I++) {
+if (($I % 3 == 0) and ($I % 5 == 0)) { echo 'FizzBuzz'; }
+elseif ($I % 5 == 0) { echo 'Buzz'; }
+elseif ($I % 3 == 0) { echo 'Fizz';}
+else { echo $I; } }
 ?>
